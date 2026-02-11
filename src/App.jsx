@@ -1,11 +1,14 @@
-import Creative from "./components/Creative"
+import { Routes, Route } from "react-router-dom"
+import Home from "./Pages/Home"
 
 function App() {
 
 
   return (
     <>
-      <Creative />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   )
 }
